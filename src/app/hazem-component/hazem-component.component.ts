@@ -10,6 +10,7 @@ import { Cons } from 'rxjs';
 })
 export class HazemComponentComponent {
   
+  name:string="Hazem Alyaari";
 person:Persons;
   
 constructor(){
@@ -20,12 +21,7 @@ constructor(){
   }  
 }  
   
-  
-  
-  
-  
-  
-  
+
   // name="Fahem";
   // addrass:any;
   // names:any[]=["hazem","Fahem",1,2,3,4];
