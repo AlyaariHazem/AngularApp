@@ -1,19 +1,21 @@
 import { Component } from '@angular/core';
 import { Cons } from 'rxjs';
-
+import { Persons } from './interface';
+import { NgFor } from '@angular/common';
 @Component({
   selector: 'app-hazem-component',
   standalone: true,
-  imports: [],
+  imports: [NgFor],
   templateUrl: './hazem-component.component.html',
-  styleUrl: './hazem-component.component.css'
+  styleUrl: './hazem-component.component.css',
 })
-export class HazemComponentComponent {
+export class HazemComponentComponent{
   
   name:string="Hazem Alyaari";
-person:Persons;
+  person:Persons;
+  FullName=['Hazem','Abdullah','Salah','Alyaari'];
   
-constructor(){
+constructor(){ 
   this.person={
     id:2,
     name:"Hazem",
@@ -41,8 +43,3 @@ constructor(){
 }
 
 
-interface Persons{
-id:number,
-name:string,
-age:number
-}

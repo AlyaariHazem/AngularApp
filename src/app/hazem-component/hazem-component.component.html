@@ -3,3 +3,8 @@
 <h4 class="age">{{age}}</h4>
 <p>{{changenames()}}</p> -->
 <h1 class="myName">{{name}}</h1>
+<h3>my id is <span class="info">{{person.id}}</span> and my name is <span class="info">{{person.name}}</span> and my age is <span class="info">{{person.age}}</span></h3>
+<br>
+<ul>
+ <li *ngFor="let item of FullName"> {{item}}</li>
+</ul>
