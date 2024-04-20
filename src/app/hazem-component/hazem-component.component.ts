@@ -14,7 +14,8 @@ export class HazemComponentComponent{
   name:string="Hazem Alyaari";
   person:Persons;
   FullName=['Hazem','Abdullah','Salah','Alyaari'];
-  
+  num=[2,3,4,5,6,7,8,9,10];
+  condition:boolean=true;
 constructor(){ 
   this.person={
     id:2,
