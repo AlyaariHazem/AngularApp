@@ -10,9 +10,15 @@ import { Cons } from 'rxjs';
 })
 export class HazemComponentComponent {
   
+person:Persons;
   
-  
-  
+constructor(){
+  this.person={
+    id:2,
+    name:"Hazem",
+    age:23
+  }  
+}  
   
   
   
@@ -36,4 +42,11 @@ export class HazemComponentComponent {
   //   changename(){
   //   this.name="Mohammed";
   //  }
+}
+
+
+interface Persons{
+id:number,
+name:string,
+age:number
 }
